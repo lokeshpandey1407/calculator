@@ -1,0 +1,43 @@
+.calculatorContainer {
+  height: 530px;
+  width: 350px;
+  border-radius: 10px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+.input {
+  width: 100%;
+  background-color: #fff;
+  height: 6rem;
+  padding: 0.5rem 1rem;
+}
+.input > textarea {
+  outline: none;
+  resize: none;
+  align-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 2rem;
+  text-align: end;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  border: 2px solid black;
+}
+.result {
+  height: 3rem;
+  background-color: #fff;
+  padding: 0rem 1rem;
+  text-align: right;
+}
+.buttonsContainer {
+  background-color: #343434;
+  border: 1px solid white;
+  height: calc(100% - 5rem);
+  display: grid;
+  padding: 1rem 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, auto);
+}

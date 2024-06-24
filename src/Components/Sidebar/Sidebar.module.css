@@ -1,0 +1,41 @@
+.sidebar {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0.5rem;
+}
+.historyItems {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+  flex-direction: column;
+}
+.item {
+  display: flex;
+  min-height: 4rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid black;
+  color: #fff;
+  background-color: #343434;
+  border-radius: 5px;
+  letter-spacing: 5px;
+  padding: 0.5rem;
+  position: relative;
+}
+.closeBtn {
+  position: absolute;
+  top: 0;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  right: 0;
+  transition: all 300ms ease-in-out;
+}
+.closeBtn:hover {
+  background-color: #fff;
+  color: #343434;
+}
