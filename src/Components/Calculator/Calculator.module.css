@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  overflow-x: hidden;
 }
 .input {
   width: 100%;
