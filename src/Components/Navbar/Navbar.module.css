@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
+  height: 3rem;
   background: linear-gradient(to right, #95c4ca, #474c8d);
   padding: 0 1rem;
 }
@@ -14,7 +14,7 @@
   align-items: center;
 }
 .logo > img {
-  height: 40px;
+  height: 30px;
   aspect-ratio: 1;
 }
 .history {

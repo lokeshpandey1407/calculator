@@ -18,7 +18,7 @@ const Navbar = ({ result }) => {
         onClick={() => setSidebar(!sidebar)}
         title="History"
         className={styles.history}
-        fontSize={"30px"}
+        fontSize={"20px"}
       />
       <div
         className={
