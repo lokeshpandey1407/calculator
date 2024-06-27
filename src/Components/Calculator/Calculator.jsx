@@ -11,6 +11,8 @@ const Calculator = ({ result, setResult }) => {
   const handleClear = () => {
     setInput("");
     setResult("");
+    setIsDecimal(false);
+    setIsOperator(false);
   };
 
   const setToLocalStorage = (expression, answer) => {
@@ -27,7 +29,7 @@ const Calculator = ({ result, setResult }) => {
       // Handlling percentage calculations before evaluation
       const parsedInput = input.replace(/(\d+(\.\d+)?)%/g, "($1 / 100)");
       const evaluatedResult = evaluate(parsedInput);
-      setResult(evaluatedResult);
+      setResult(evaluatedResult.toFixed(3));
       setToLocalStorage(input, evaluatedResult);
       setIsOperator(false);
     } catch (error) {
