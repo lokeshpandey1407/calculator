@@ -21,7 +21,7 @@ Node.js and npm (Node Package Manager) installed on your system.
 ### Steps
 1. Clone the Repository
 
-git clone [https://github.com/yourusername/calculator-app.git](https://github.com/lokeshpandey1407/calculator.git)
+git clone https://github.com/lokeshpandey1407/calculator.git
 cd calculator
 
 2. Install Dependencies
@@ -34,3 +34,4 @@ React - Front-end library for building the user interface.
 CSS - Styling the application.
 JavaScript - Application logic and functionality.
 React Icons - For icons used in the application.
+Math.js -  For performing calculations on String expression
