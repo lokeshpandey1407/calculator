@@ -22,6 +22,7 @@ Node.js and npm (Node Package Manager) installed on your system.
 1. Clone the Repository
 
 git clone https://github.com/lokeshpandey1407/calculator.git
+
 cd calculator
 
 2. Install Dependencies
