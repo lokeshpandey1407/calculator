@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./Calculator.module.css";
 import Button from "../Button/Button";
 import { evaluate } from "mathjs";
@@ -8,6 +8,7 @@ const Calculator = ({ result, setResult }) => {
   const [isDecimal, setIsDecimal] = useState(false);
   const [isOperator, setIsOperator] = useState(false);
 
+  //Function to clear the  expression and result
   const handleClear = () => {
     setInput("");
     setResult("");
@@ -15,6 +16,7 @@ const Calculator = ({ result, setResult }) => {
     setIsOperator(false);
   };
 
+  //Setting history to local storage
   const setToLocalStorage = (expression, answer) => {
     let id = new Date().getTime() - Math.random();
     let Calcu_calculations =
@@ -37,10 +39,12 @@ const Calculator = ({ result, setResult }) => {
     }
   };
 
+  //Function to Handle delete expression element
   const handleDelete = () => {
     setInput((prev) => prev.slice(0, -1));
   };
 
+  //Function to change the input on the click of a button
   const handleChange = (val) => {
     if (val === "." && !isDecimal) {
       setIsDecimal(true);

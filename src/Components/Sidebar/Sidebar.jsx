@@ -4,6 +4,8 @@ import styles from "./Sidebar.module.css";
 
 const Sidebar = ({ result }) => {
   const [calculations, setCalculations] = useState([]);
+
+  //Function to handle calculation delete
   const handleCalculationDelete = (item) => {
     const filteredItems = calculations.filter(
       (calculation) => calculation.id !== item.id
@@ -12,12 +14,14 @@ const Sidebar = ({ result }) => {
     setCalculations(filteredItems);
   };
 
+  //Use effect to get history when the sidebar page loads
   useEffect(() => {
     const items = JSON.parse(localStorage.getItem("calu_calu"));
     if (items) {
       setCalculations(items);
     }
   }, [result]);
+
   return (
     <div className={styles.sidebar}>
       <h3>History</h3>
