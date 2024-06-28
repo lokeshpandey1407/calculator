@@ -31,7 +31,7 @@ const Calculator = ({ result, setResult }) => {
       // Handlling percentage calculations before evaluation
       const parsedInput = input.replace(/(\d+(\.\d+)?)%/g, "($1 / 100)");
       const evaluatedResult = evaluate(parsedInput);
-      setResult(evaluatedResult.toFixed(3));
+      setResult(evaluatedResult);
       setToLocalStorage(input, evaluatedResult);
       setIsOperator(false);
     } catch (error) {
